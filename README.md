@@ -21,7 +21,7 @@ via Keyboard shortcuts.
 * Find / Highlight DOM Elements.
 * Display DOM Elements in Konsole.
 * A simple DOM Overflow Tester ( no success-guarantee given ;) ).
-* CSS Manipulation ( add/remove class names, change properties, retrieve current styles of a DOM Element ).
+* CSS Manipulation ( add/remove classes, change properties, retrieve styles on DOM Element ).
 * Possibility to log to a server via KonsoleReport. 
 
 
@@ -43,24 +43,24 @@ Konsole comes in two flavors:
 
 * `bundled` with [prettify.js](https://code.google.com/p/google-code-prettify/) for DOM Element beautifying.
 * regular `min` in case you don't need that.
-* `nokonsole` can be used to disable any form of logging without the need to remove any logging code.
+* use `nokonsole` to disable logging without the need to remove any logging code.
 * The same thing can be achieved by setting the option `Konsole.enabled` to `false`.
 
 ## Keyboard Shortcuts
 
-| Shortcut      | Second Header |
-| ------------- | ------------- |
-| `§`           | Open / Close Konsole (can be user-defined) |
-| `Up / Down` | Browse the commandline history |
-| `Ctrl + (Up / Down)` | Scroll Konsole content. Press `Shift` for faster scrolling. |
-| `Alt + (Up / Down)` | Resize Konsole. Press `Shift` for faster resizing |
-| `Ctrl + Alt + (Up / Right / Down / Left)` | Snap Konsole to any border of the screen |
+| Shortcut                                  | Description                                                 |
+| ----------------------------------------- | ----------------------------------------------------------- |
+| `§`                                       | Open / Close Konsole (can be user-defined)                  |
+| `Up / Down`                               | Browse the commandline history                              |
+| `Ctrl + (Up / Down)`                      | Scroll Konsole content. Press `Shift` for faster scrolling. |
+| `Alt + (Up / Down)`                       | Resize Konsole. Press `Shift` for faster resizing           |
+| `Ctrl + Alt + (Up / Right / Down / Left)` | Snap Konsole to any border of the screen                    |
 
 
 ## Documentation
 
-* Check out the JsDocs for a Method and Property Reference.
-* There are simple examples on how to use Konsole in the `examples` folder.
+* Check out the [JSDocs](https://rawgit.com/eatcodeplay/Konsole.js/master/docs/index.html) for a Method and Property Reference.
+* There are simple examples on how to use Konsole in the `/examples` folder. [Basic Example](https://rawgit.com/eatcodeplay/Konsole.js/master/examples/basic.html) , [Options Example](https://rawgit.com/eatcodeplay/Konsole.js/master/examples/options.html)
 * For a list of available commands type `help` in the Konsole commandline.
 
 
@@ -69,7 +69,7 @@ Konsole comes in two flavors:
 KonsoleReport is a small PHP Backend for Konsole to send messages to. It requires
 PHP 5+ and writes its logs as JSON Files (one for each day).
 
-Check out the JsDocs on how to use it.
+Check out the [JSDocs](https://rawgit.com/eatcodeplay/Konsole.js/master/docs/index.html) on how to use it.
 
 More Documentation will be added soon hopefully :)
 
@@ -82,7 +82,7 @@ More Documentation will be added soon hopefully :)
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Sandro Ducceschi [eatcodeplay.ch]
+Copyright (c) 2015 Sandro Ducceschi [eatcodeplay.ch](http://eatcodeplay.ch)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
