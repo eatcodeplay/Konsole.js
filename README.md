@@ -8,6 +8,8 @@ project you are working on, without the need to have a debugger take
 up precious space. Konsole can be quickly accessed and used
 via Keyboard shortcuts.
 
+Here, have a [demo](https://rawgit.com/eatcodeplay/Konsole.js/master/examples/basic.html).
+
 
 ## Features
 
