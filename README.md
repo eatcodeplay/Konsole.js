@@ -31,12 +31,15 @@ Konsole currently requires `jQuery v1` or `jQuery v2` to be loaded before itself
 Afterwards just add the CSS and Javascript File and you are good to go.
 
 ```html
-    // Make sure you've loaded jQuery before
+    <!-- Make sure you've loaded jQuery before -->
     <link type="text/css" rel="stylesheet" href="konsole-1.0.0.bundled.min.css" />
     <script type="text/javascript" src="konsole-1.0.0.bundled.min.js"></script>
 
-    // ready to go
-    console.log('hello world');
+
+    <!-- ready to go -->
+    <script>
+        console.log('hello world');
+    </script>
 ```
 
 Konsole comes in two flavors:
