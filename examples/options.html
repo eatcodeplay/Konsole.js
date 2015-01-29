@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Initialization Options</title>
+
+        <!-- Add Konsole CSS -->
+        <link type="text/css" rel="stylesheet" href="../build/konsole-1.0.0.bundled.min.css" />
+        <!-- Make sure jQuery is around -->
+        <script type="text/javascript" src="../vendor/jquery-2.1.3.min.js"></script>
+        <!-- Add Konsole.js -->
+        <script type="text/javascript" src="../build/konsole-1.0.0.bundled.min.js"></script>
+        <!--<script type="text/javascript" src="../vendor/prettify.js"></script>
+        <script type="text/javascript" src="../src/konsole.js"></script>-->
+
+        <script type="text/javascript">
+
+            // Defines if Konsole shall act as the default console.
+            // This allows you to use Konsole the same way you would use the regular console.
+            // See Documentation for more infos.
+            // Default: true
+            Konsole.takeOver = false;
+
+            // If the default browser console should be logged to as well
+            // Default: true
+            Konsole.originalEnabled = true;
+
+            // Boolean value indicating if Konsole logging is enabled or disabled.
+            // If Konsole is in Takeover-Mode, this will also disable the browser default console logging.
+            Konsole.enabled = true;
+
+            // The Key to which Konsole should be bound. When pressed, the Konsole will either show or hide.
+            // Default: $
+            Konsole.key = "§";
+
+            // Defines the maximum depth that an object should be inspected.
+            // Default: 5
+            Konsole.maxLogDepth = 5;
+
+            // Snap the Console to any of the four borders of the screen.
+            // Values are: top, right, bottom, left
+            Konsole.snap = "bottom";
+
+            // Catch all Javascript errors and log them to Konsole
+            // Default: false
+            Konsole.showErrors = true;
+
+            // If Konsole Reporting is enabled or not.
+            // See Documentation for more infos.
+            // Default: false
+            Konsole.reportingEnabled = false;
+
+            // URL to KonsoleReporter
+            Konsole.reportingUrl = "../konsolereport/log.php";
+
+
+            // Let's display something
+            Konsole.log('hello world');
+            Konsole.show();
+
+        </script>
+
+    </head>
+<body>
+
+    <div style="position: relative; margin: 50px auto 0 auto; width: 400px; height: 50px; text-align: center;">
+        There really is nothing to see here..
+    </div>
+
+</body>
+</html>

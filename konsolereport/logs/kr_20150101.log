@@ -1,0 +1,94 @@
+[
+  {
+    "time": 1420110000,
+    "type": "system",
+    "msg": "This is a system message",
+    "url": "js/something.js",
+    "line": 4,
+    "client": {
+      "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36",
+      "language": "en-US",
+      "platform": "Win32",
+      "version": "5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36"
+    }
+  },
+  {
+    "time": 1420110001,
+    "type": "log",
+    "msg": "This is regular log message",
+    "url": "js/something.js",
+    "line": 4,
+    "client": {
+      "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36",
+      "language": "en-US",
+      "platform": "Win32",
+      "version": "5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36"
+    }
+  },
+  {
+    "time": 1420110002,
+    "type": "info",
+    "msg": "This is a info message",
+    "url": "js/something.js",
+    "line": 4,
+    "client": {
+      "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36",
+      "language": "en-US",
+      "platform": "Win32",
+      "version": "5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36"
+    }
+  },
+  {
+    "time": 1420110003,
+    "type": "event",
+    "msg": "This is a event message",
+    "url": "js/something.js",
+    "line": 4,
+    "client": {
+      "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36",
+      "language": "en-US",
+      "platform": "Win32",
+      "version": "5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36"
+    }
+  }
+  ,{
+    "time": 1420110004,
+    "type": "warn",
+    "msg": "This is a warn message",
+    "url": "js/something.js",
+    "line": 4,
+    "client": {
+      "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36",
+      "language": "en-US",
+      "platform": "Win32",
+      "version": "5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36"
+    }
+  }
+  ,{
+    "time": 1420110005,
+    "type": "error",
+    "msg": "This is a error message",
+    "url": "js/something.js",
+    "line": 4,
+    "client": {
+      "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36",
+      "language": "en-US",
+      "platform": "Win32",
+      "version": "5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36"
+    }
+  }
+  ,{
+    "time": 1420110006,
+    "type": "report",
+    "msg": "This is a report message",
+    "url": "js/something.js",
+    "line": 4,
+    "callee": "User",
+    "client": {
+      "agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36",
+      "language": "en-US",
+      "platform": "Win32",
+      "version": "5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36"
+    }
+  }
+]

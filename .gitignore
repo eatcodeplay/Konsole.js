@@ -1,0 +1,14 @@
+# Windows crap
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Mac crap
+.DS_Store
+
+# IntelliJ IDEA
+.idea/
+
+# Node Modules
+build/node_modules/

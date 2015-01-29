@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Konsole.js Reference</title>
+    
+    <meta name="description" content="An On-Screen Browser Console and/or default console replacement/alternative" />
+    
+        <meta name="keywords" content="browser, web, screen, console, debugging, javascript, js" />
+        <meta name="keyword" content="browser, web, screen, console, debugging, javascript, js" />
+    
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+    
+    <script>
+    var config = {"default":{"outputSourceFiles":true},"monospaceLinks":false,"cleverLinks":false,"applicationName":"Konsole.js","meta":{"title":"Konsole.js Reference","description":"An On-Screen Browser Console and/or default console replacement/alternative","keyword":"browser, web, screen, console, debugging, javascript, js"}};
+    </script>
+    
+
+    
+</head>
+<body>
+<div id="wrap" class="clearfix">
+    
+<div class="navigation">
+    <h3 class="applicationName"><a href="index.html">Konsole.js</a></h3>
+
+    <div class="search">
+        <input id="search" type="text" class="form-control input-sm" placeholder="Search Documentations">
+    </div>
+    <ul class="list">
+    
+        <li class="item" data-name="Konsole">
+            <span class="title">
+                <a href="Konsole.html">Konsole</a>
+                
+                <span class="static">static</span>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="Konsole.enabled"><a href="Konsole.html#enabled">enabled</a></li>
+            
+                <li data-name="Konsole.key"><a href="Konsole.html#key">key</a></li>
+            
+                <li data-name="Konsole.maxLogDepth"><a href="Konsole.html#maxLogDepth">maxLogDepth</a></li>
+            
+                <li data-name="Konsole.originalEnabled"><a href="Konsole.html#originalEnabled">originalEnabled</a></li>
+            
+                <li data-name="Konsole.reportingEnabled"><a href="Konsole.html#reportingEnabled">reportingEnabled</a></li>
+            
+                <li data-name="Konsole.reportingUrl"><a href="Konsole.html#reportingUrl">reportingUrl</a></li>
+            
+                <li data-name="Konsole.showErrors"><a href="Konsole.html#showErrors">showErrors</a></li>
+            
+                <li data-name="Konsole.snap"><a href="Konsole.html#snap">snap</a></li>
+            
+                <li data-name="Konsole.takeOver"><a href="Konsole.html#takeOver">takeOver</a></li>
+            
+                <li data-name="Konsole.visible"><a href="Konsole.html#visible">visible</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="Konsole.clear"><a href="Konsole.html#clear">clear</a></li>
+            
+                <li data-name="Konsole.createCommand"><a href="Konsole.html#createCommand">createCommand</a></li>
+            
+                <li data-name="Konsole.error"><a href="Konsole.html#error">error</a></li>
+            
+                <li data-name="Konsole.event"><a href="Konsole.html#event">event</a></li>
+            
+                <li data-name="Konsole.getStackLine"><a href="Konsole.html#getStackLine">getStackLine</a></li>
+            
+                <li data-name="Konsole.hide"><a href="Konsole.html#hide">hide</a></li>
+            
+                <li data-name="Konsole.info"><a href="Konsole.html#info">info</a></li>
+            
+                <li data-name="Konsole.log"><a href="Konsole.html#log">log</a></li>
+            
+                <li data-name="Konsole.monitor"><a href="Konsole.html#monitor">monitor</a></li>
+            
+                <li data-name="Konsole.observe"><a href="Konsole.html#observe">observe</a></li>
+            
+                <li data-name="Konsole.report"><a href="Konsole.html#report">report</a></li>
+            
+                <li data-name="Konsole.resize"><a href="Konsole.html#resize">resize</a></li>
+            
+                <li data-name="Konsole.sep"><a href="Konsole.html#sep">sep</a></li>
+            
+                <li data-name="Konsole.separator"><a href="Konsole.html#separator">separator</a></li>
+            
+                <li data-name="Konsole.show"><a href="Konsole.html#show">show</a></li>
+            
+                <li data-name="Konsole.system"><a href="Konsole.html#system">system</a></li>
+            
+                <li data-name="Konsole.warn"><a href="Konsole.html#warn">warn</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+    </ul>
+</div>
+    <div class="main">
+        <h1 class="page-title" data-filename="index.html">Index</h1>
+        
+
+
+    
+
+
+    <h3> </h3>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <section>
+        <article class="readme"><h1 id="konsole-js">Konsole.js</h1>
+<p>Konsole.js is a On-Screen Debugger/Logger and (optionally)
+default browser console replacement.</p>
+<p>Konsole was created to have a quick and simple way to debug a 
+project you are working on, without the need to have a debugger take
+up precious space. Konsole can be quickly accessed and used
+via Keyboard shortcuts.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Obviously logging ( Log types: <code>log, info, systen, warn, error, event</code> ).</li>
+<li>Prettifies log output, also allowing to define custom inspection depth </li>
+<li>Takeover-Mode: use Konsole as if it were <code>console</code>. (Can be disabled)</li>
+<li>Create custom commands that can be called via the Commandline.</li>
+<li>Monitor values via a floating Window. Useful for fast changing properties.</li>
+<li><code>Object.observe</code> in Konsole. Loads Polyfill (using <a target="_blank" href="https://github.com/MaxArt2501/object-observe">MaxArt2501/object-observe</a>) if neccessary.</li>
+<li>Display FPS/MS Stats via <a target="_blank" href="https://github.com/mrdoob/stats.js/">mrdoob/stats.js</a>.</li>
+<li>Find / Highlight DOM Elements.</li>
+<li>Display DOM Elements in Konsole.</li>
+<li>A simple DOM Overflow Tester ( no success-guarantee given ;) ).</li>
+<li>CSS Manipulation ( add/remove class names, change properties, retrieve current styles of a DOM Element ).</li>
+<li>Possibility to log to a server via KonsoleReport. </li>
+</ul>
+<h2 id="how-to-use">How-to use</h2>
+<p>Konsole currently requires <code>jQuery v1</code> or <code>jQuery v2</code> to be loaded before itself.
+Afterwards just add the CSS and Javascript File and you are good to go.</p>
+<pre><code class="lang-html">    // Make sure you&#39;ve loaded jQuery before
+    &lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;konsole-1.0.0.bundled.min.css&quot; /&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;konsole-1.0.0.bundled.min.js&quot;&gt;&lt;/script&gt;
+
+    // ready to go
+    console.log(&#39;hello world&#39;);
+</code></pre>
+<p>Konsole comes in two flavors:</p>
+<ul>
+<li><code>bundled</code> with <a target="_blank" href="https://code.google.com/p/google-code-prettify/">prettify.js</a> for DOM Element beautifying.</li>
+<li>regular <code>min</code> in case you don&#39;t need that.</li>
+<li><code>nokonsole</code> can be used to disable any form of logging without the need to remove any logging code.</li>
+<li>The same thing can be achieved by setting the option <code>Konsole.enabled</code> to <code>false</code>.</li>
+</ul>
+<h2 id="keyboard-shortcuts">Keyboard Shortcuts</h2>
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Second Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>§</code></td>
+<td>Open / Close Konsole (can be user-defined)</td>
+</tr>
+<tr>
+<td><code>Up / Down</code></td>
+<td>Browse the commandline history</td>
+</tr>
+<tr>
+<td><code>Ctrl + (Up / Down)</code></td>
+<td>Scroll Konsole content. Press <code>Shift</code> for faster scrolling.</td>
+</tr>
+<tr>
+<td><code>Alt + (Up / Down)</code></td>
+<td>Resize Konsole. Press <code>Shift</code> for faster resizing</td>
+</tr>
+<tr>
+<td><code>Ctrl + Alt + (Up / Right / Down / Left)</code></td>
+<td>Snap Konsole to any border of the screen</td>
+</tr>
+</tbody>
+</table>
+<h2 id="documentation">Documentation</h2>
+<ul>
+<li>Check out the JsDocs for a Method and Property Reference.</li>
+<li>There are simple examples on how to use Konsole in the <code>examples</code> folder.</li>
+<li>For a list of available commands type <code>help</code> in the Konsole commandline.</li>
+</ul>
+<h2 id="konsolereport">KonsoleReport</h2>
+<p>KonsoleReport is a small PHP Backend for Konsole to send messages to. It requires
+PHP 5+ and writes its logs as JSON Files (one for each day).</p>
+<p>Check out the JsDocs on how to use it.</p>
+<p>More Documentation will be added soon hopefully :)</p>
+<h2 id="browser-support">Browser Support</h2>
+<ul>
+<li>Any modern Browser and IE9 upwards</li>
+<li>IE8 requires <code>jQuery v1</code></li>
+</ul>
+<h2 id="license">License</h2>
+<p>The MIT License (MIT)</p>
+<p>Copyright (c) 2015 Sandro Ducceschi [eatcodeplay.ch]</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the &quot;Software&quot;), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+</article>
+    </section>
+
+
+
+
+
+
+        
+
+        <footer>
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-alpha5</a> on Thu Jan 29 2015 15:05:07 GMT+0100 (W. Europe Standard Time)
+        </footer>
+    </div>
+</div>
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

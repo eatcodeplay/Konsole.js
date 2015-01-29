@@ -1,0 +1,139 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #222;
+    font-family: "Source Code Pro", "Consolas", "Monaco", "Lucida Console", "Courier New", monospace;
+    font-size: 14px;
+    color: #E1E1E1;
+    line-height: 15px;
+}
+h2 {
+    padding: 5px;
+    text-align: right;
+    text-shadow: 1px 1px 5px #000;
+    outline: 0;
+    word-break: keep-all;
+    line-break: strict;
+    white-space: nowrap;
+}
+.templates {
+    display: none;
+}
+.container {
+    max-width: 98%;
+    margin: 0 auto;
+}
+.entries {
+    width: 100%;
+    margin: 15px 0 30px 0;
+}
+.entry {
+    background: #111;
+    padding: 4px;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 1px solid #111;
+    border-top-width: 3px;
+}
+.entry:hover {
+    background: #141414;
+    border: 1px solid #000;
+    border-top-width: 3px;
+}
+.entry.info:hover {
+    background: #0D2125;
+}
+.entry.report:hover {
+    background: #201F0D;
+}
+.entry.event:hover {
+    background: #021D03;
+}
+.entry.error:hover {
+    background: #250101;
+}
+.entry.warn:hover {
+    background: #251705;
+}
+.entry.system:hover {
+    background: #202020;
+}
+.entry:first-child {
+    border-radius: 6px 6px 0 0;
+}
+.entry:last-child {
+    border-radius: 0 0 6px 6px;
+    border-bottom-width: 2px;
+}
+.entry span.time {
+    color: #999999;
+}
+.entry span.msg {
+    color: #E1E1E1;
+}
+.entry.info span.msg {
+    color: #5ADDFA;
+}
+.entry.report span.msg {
+    color: #FAEC5A;
+}
+.entry.event span.msg {
+    color: #0FF113;
+}
+.entry.error span.msg {
+    color: #E70707;
+}
+.entry.warn span.msg {
+    color: #FD9720;
+}
+.entry.system span.msg {
+    color: #999999;
+}
+.entry span.callee {
+    float: right;
+    color: #454545;
+    padding: 0 2px 0 10px;
+}
+.entry span.callee:after {
+    clear: right;
+}
+.entry .full {
+    padding: 10px 0 0 0;
+    display: none;
+    font-size: 12px;
+}
+.entry .obj {
+    padding: 10px;
+}
+.entry .obj h4 {
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+    padding: 0;
+
+}
+.entry .property{
+    padding: 0 10px 0 10px;
+}
+.entry .property:nth-child(odd) {
+    background: rgba(0,0,0, 0.2);
+    margin: 0 0 0 -5px;
+    padding: 0 10px 0 25px;
+}
+.entry .obj .property:nth-child(odd) {
+    margin: 0 -15px 0 -15px;
+}
+.entry .property span.name {
+    text-transform: capitalize;
+}
+.entry .property span.value {
+    color: #999999;
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
+    .entry span.callee {
+        font-size: 12px;
+    }
+}

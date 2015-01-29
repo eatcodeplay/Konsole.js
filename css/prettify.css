@@ -1,0 +1,36 @@
+.pln {
+    color: #F8F8F2;
+}
+.str {
+    color: #080;
+}
+.kwd {
+    color: #E6DB74;
+}
+.com {
+    color: #800;
+}
+.typ {
+    color: #606;
+}
+.lit {
+    color: #E6DB74;
+}
+.pun, .opn, .clo {
+    color: #A6E22F;
+}
+.tag {
+    color: #F92572;
+}
+.atn {
+    color: #A6E22F;
+}
+.atv {
+    color: #E6DB74;
+}
+.dec, .var {
+    color: #606;
+}
+.fun {
+    color: red;
+}

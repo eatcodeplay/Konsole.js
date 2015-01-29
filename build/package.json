@@ -1,0 +1,19 @@
+{
+  "name": "konsole-build",
+  "version": "1.0.0",
+  "description": "Konsole Minification and Bundling Task, as well as JSDoc generation",
+  "author": {
+    "name": "Sandro Ducceschi",
+    "email": "sandro@eatcodeplay.ch",
+    "url":  "http://eatcodeplay.ch"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "merge-stream": "latest",
+    "gulp-concat": "latest",
+    "gulp-rename": "latest",
+    "gulp-uglify": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-jsdoc": "latest"
+  }
+}
