@@ -8,7 +8,7 @@ project you are working on, without the need to have a debugger take
 up precious space. Konsole can be quickly accessed and used
 via Keyboard shortcuts.
 
-Here, have a [demo](https://rawgit.com/eatcodeplay/Konsole.js/master/examples/basic.html).
+Here, have a [demo](https://cdn.rawgit.com/eatcodeplay/Konsole.js/master/examples/basic.html).
 
 
 ## Features
@@ -64,8 +64,8 @@ Konsole comes in two flavors:
 
 ## Documentation
 
-* Check out the [JSDocs](https://rawgit.com/eatcodeplay/Konsole.js/master/docs/index.html) for a Method and Property Reference.
-* There are simple examples on how to use Konsole in the `/examples` folder. [Basic Example](https://rawgit.com/eatcodeplay/Konsole.js/master/examples/basic.html) , [Options Example](https://rawgit.com/eatcodeplay/Konsole.js/master/examples/options.html)
+* Check out the [JSDocs](https://cdn.rawgit.com/eatcodeplay/Konsole.js/master/docs/index.html) for a Method and Property Reference.
+* There are simple examples on how to use Konsole in the `/examples` folder. [Basic Example](https://cdn.rawgit.com/eatcodeplay/Konsole.js/master/examples/basic.html) , [Options Example](https://cdn.rawgit.com/eatcodeplay/Konsole.js/master/examples/options.html)
 * For a list of available commands type `help` in the Konsole commandline.
 
 
@@ -74,7 +74,7 @@ Konsole comes in two flavors:
 KonsoleReport is a small PHP Backend for Konsole to send messages to. It requires
 PHP 5+ and writes its logs as JSON Files (one for each day).
 
-Check out the [JSDocs](https://rawgit.com/eatcodeplay/Konsole.js/master/docs/index.html) on how to use it.
+Check out the [JSDocs](https://cdn.rawgit.com/eatcodeplay/Konsole.js/master/docs/index.html) on how to use it.
 
 More Documentation will be added soon hopefully :)
 

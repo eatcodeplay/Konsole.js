@@ -937,7 +937,7 @@
     {
         if (typeof Stats != 'function') {
             console.system('Loading stats.js, just a sec..');
-            p.loadExternalScripts('//rawgithub.com/mrdoob/stats.js/master/build/stats.min.js', 'doobStats');
+            p.loadExternalScripts('//cdn.rawgit.com/mrdoob/stats.js/master/build/stats.min.js', 'doobStats');
         }
 
         var $stats = $('#stats');
@@ -1002,7 +1002,7 @@
         }
         else {
             console.system('Object.observe is not implemented. Loading Polyfill.');
-            p.loadExternalScripts('//rawgithub.com/MaxArt2501/object-observe/master/dist/object-observe-lite.min.js', 'objectObserve');
+            p.loadExternalScripts('//cdn.rawgit.com/MaxArt2501/object-observe/master/dist/object-observe-lite.min.js', 'objectObserve');
             var interval = setInterval(function(){
                 if (typeof Object.observe == 'function') {
                     clearInterval(interval);
