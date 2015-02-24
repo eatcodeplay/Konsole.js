@@ -1,6 +1,6 @@
 {
   "name": "konsole-build",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Konsole Minification and Bundling Task, as well as JSDoc generation",
   "author": {
     "name": "Sandro Ducceschi",

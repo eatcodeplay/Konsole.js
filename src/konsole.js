@@ -16,7 +16,7 @@
      * @see Konsole.takeOver
      * @namespace Konsole
      */
-    var Konsole = { version: "1.0.0" },
+    var Konsole = { version: "1.1.0" },
     p = Konsole.prototype = {};
 
     p.init = function()
@@ -236,7 +236,10 @@
             return p._showErrors;
         },
         set: function(bool) {
-            window.onerror = (bool) ? p.handleGlobalError : null;
+            if (bool)
+                window.addEventListener('error', p.handleGlobalError);
+            else
+                window.removeEventListener('error', p.handleGlobalError);
             p._showErrors = bool;
         },
         enumerable: true,
@@ -1451,21 +1454,15 @@
         }
     };
 
-    p.handleGlobalError = function(msg, url, line)
+    p.handleGlobalError = function(err)
     {
         try {
-            var loc, docUrl;
-            loc = document.location.href.split('/');
-            loc.pop();
-            docUrl = loc.join('/');
-            url = url.replace(docUrl, '').replace('/', '');
-            url = (url == '') ? 'index' : url;
-            if (url != 'index' && line != 0) {
-                Konsole.error(msg+'  <- '+url+':'+line);
-                Konsole.show();
-            }
+            var loc = err.colno ? err.lineno + ':' + err.colno : err.lineno,
+                msg = err.message,
+                file = err.filename.split('/').pop();
+            Konsole.error(msg+'  <- '+file+':'+loc);
+            Konsole.show();
         } catch (err) {}
-        return false;
     };
 
     p.handleDOMHoverOver = function()
