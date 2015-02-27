@@ -13,7 +13,7 @@ Here, have a [demo](https://rawgit.com/eatcodeplay/Konsole.js/master/examples/ba
 
 ## Features
 
-* Obviously logging ( Log types: `log, info, systen, warn, error, event` ).
+* Obviously logging ( Log types: `log, info, system, warn, error, event` ).
 * Prettifies log output, also allowing to define custom inspection depth 
 * Takeover-Mode: use Konsole as if it were `console`. (Can be disabled)
 * Create custom commands that can be called via the Commandline.
