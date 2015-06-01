@@ -16,7 +16,7 @@
      * @see Konsole.takeOver
      * @namespace Konsole
      */
-    var Konsole = { version: "1.1.0" },
+    var Konsole = { version: "1.2.0" },
     p = Konsole.prototype = {};
 
     p.init = function()
@@ -60,16 +60,23 @@
 
                 if (p._visible)
                 {
+                    if (p.isTouchDevice())
+                        $konsole.addClass('touchable');
                     $konsole.css('display', 'block');
                     $konsole.find('.log.wrapped').append(p.logs.join('<br/>'));
                     $cmdLine.focus();
                     p.updateLogContent();
 
-                    $konsole.find('.log.wrapped').off('mousewheel').on('mousewheel', function(evt){
-                        evt.preventDefault(); evt.stopPropagation();
-                        var scrollTop = $konsole.find('.log.wrapped').scrollTop();
-                        $konsole.find('.log.wrapped').scrollTop(scrollTop - evt.originalEvent.wheelDelta);
-                    });
+                    var logEl = $konsole.find('.log.wrapped').get(0);
+                    if (logEl.addEventListener) {
+                        logEl.removeEventListener('mousewheel', p.handleMouseWheel);
+                        logEl.removeEventListener('DOMMouseScroll', p.handleMouseWheel);
+                        logEl.addEventListener('mousewheel', p.handleMouseWheel, false);
+                        logEl.addEventListener('DOMMouseScroll', p.handleMouseWheel, false);
+                    } else {
+                        logEl.detachEvent('onmousewheel', p.handleMouseWheel);
+                        logEl.attachEvent('onmousewheel', p.handleMouseWheel);
+                    }
                 }
 
                 Konsole.snap = p._konsoleSnap;
@@ -81,9 +88,7 @@
                 $cmdLine.off('keydown').on('keydown', p.handleCmdResize);
                 $(this).off('keypress keyup').on('keypress keyup', p.handleKeyboardEvent);
 
-                // mobile console helper
-                var userAgent = navigator.userAgent.toLowerCase();
-                if (userAgent.indexOf('iphone') != -1 || userAgent.indexOf('ipad') != -1 || userAgent.indexOf('android') != -1)
+                if (p.isTouchDevice())
                 {
                     var addTouchButton = function() {
                         var $touch = $('.konsole-touch');
@@ -405,21 +410,32 @@
                 $konsole = $($konsole.selector);
             }
 
+            if (p.isTouchDevice())
+                $konsole.addClass('touchable');
+
+            var $log = $konsole.find('.log.wrapped'),
+                $cmd = $konsole.find('.cmdline input');
+
             Konsole.resize();
-            $konsole.find('.log.wrapped').html('');
-            $konsole.find('.log.wrapped').append(p.logs.join('<br/>'));
+            $log.html('');
+            $log.append(p.logs.join('<br/>'));
             $konsole.css('display', 'block');
-            $konsole.find('.cmdline input').focus();
+            $cmd.focus();
             p.updateLogContent();
 
-            $konsole.find('.cmdline input').on('keyup', p.handleCmdInput);
-            $konsole.find('.cmdline input').on('keydown', p.handleCmdResize);
+            $cmd.on('keyup', p.handleCmdInput);
+            $cmd.on('keydown', p.handleCmdResize);
 
-            $konsole.find('.log.wrapped').off('mousewheel').on('mousewheel', function(evt){
-                evt.preventDefault(); evt.stopPropagation();
-                var scrollTop = $konsole.find('.log.wrapped').scrollTop();
-                $konsole.find('.log.wrapped').scrollTop(scrollTop - evt.originalEvent.wheelDelta);
-            });
+            var logEl = $log.get(0);
+            if (logEl.addEventListener) {
+                logEl.removeEventListener('mousewheel', p.handleMouseWheel);
+                logEl.removeEventListener('DOMMouseScroll', p.handleMouseWheel);
+                logEl.addEventListener('mousewheel', p.handleMouseWheel, false);
+                logEl.addEventListener('DOMMouseScroll', p.handleMouseWheel, false);
+            } else {
+                logEl.detachEvent('onmousewheel', p.handleMouseWheel);
+                logEl.attachEvent('onmousewheel', p.handleMouseWheel);
+            }
         }
         p._visible = true;
     };
@@ -1320,6 +1336,11 @@
         return hex.length == 1 ? "0" + hex : hex;
     };
 
+    p.isTouchDevice = function()
+    {
+        return 'ontouchstart' in window || ('onmsgesturechange' in window && window.navigator.msMaxTouchPoints > 0);
+    };
+
     //----------------------------------
     // Resources Methods
     //----------------------------------
@@ -1384,6 +1405,15 @@
                 $cmdLine.val(p.history[p.historyIndex]);
             }
         }
+    };
+
+    p.handleLogMouseWheel = function(evt)
+    {
+        evt = window.event || evt;
+        var $log = $('#konsole').find('.log.wrapped'),
+            scrollTop = $log.scrollTop(),
+            delta = Math.max(-1, Math.min(1, (evt.wheelDelta || -evt.detail)));
+        $log.scrollTop(scrollTop - (delta*13));
     };
 
     p.handleCmdResize = function(e)

@@ -1,18 +1,20 @@
 # Konsole.js
 
 Konsole.js is a On-Screen Debugger/Logger and (optionally)
-default browser console replacement.
+default browser console replacement for mobile and desktop.
 
 Konsole was created to have a quick and simple way to debug a 
 project you are working on, without the need to have a debugger take
 up precious space. Konsole can be quickly accessed and used
-via Keyboard shortcuts.
+via Keyboard shortcuts. If you want to open Konsole on mobile, there
+is a hidden square/button at the bottom right of the browser on mobile devices.
 
 Here, have a [demo](https://rawgit.com/eatcodeplay/Konsole.js/master/examples/basic.html).
 
 
 ## Features
 
+* Mobile Friendly. Can be opened via a hidden square/button at the bottom right of any mobile browser.
 * Obviously logging ( Log types: `log, info, system, warn, error, event` ).
 * Prettifies log output, also allowing to define custom inspection depth 
 * Takeover-Mode: use Konsole as if it were `console`. (Can be disabled)
@@ -34,8 +36,8 @@ Afterwards just add the CSS and Javascript File and you are good to go.
 
 ```html
     <!-- Make sure you've loaded jQuery before -->
-    <link type="text/css" rel="stylesheet" href="konsole-1.1.0.bundled.min.css" />
-    <script type="text/javascript" src="konsole-1.1.0.bundled.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="konsole-1.2.0.bundled.min.css" />
+    <script type="text/javascript" src="konsole-1.2.0.bundled.min.js"></script>
 
 
     <!-- ready to go -->
@@ -47,7 +49,7 @@ Afterwards just add the CSS and Javascript File and you are good to go.
 Konsole comes in two flavors:
 
 * `bundled` with [prettify.js](https://code.google.com/p/google-code-prettify/) for DOM Element beautifying.
-* regular `min` in case you don't need that.
+* regular `min` in case you don't need/want that.
 * use `nokonsole` to disable logging without the need to remove any logging code.
 * The same thing can be achieved by setting the option `Konsole.enabled` to `false`.
 
@@ -80,8 +82,8 @@ More Documentation will be added soon hopefully :)
 
 ## Browser Support
 
-* Any modern Browser and IE9 upwards
-* IE8 requires `jQuery v1`
+* Any modern Desktop or Mobile Browser and IE9 upwards
+* IE8 requires `jQuery v1`. No guarantees given that everything works smoothly :P
 
 ## License
 

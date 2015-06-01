@@ -56,6 +56,15 @@
     width: 100%;
     overflow: hidden;
 }
+#konsole.touchable .log .wrapped {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    width: 100% !important;
+}
+#konsole.touchable .log .wrapped::-webkit-scrollbar {
+    display: none;
+}
 #konsole .cmdline {
     position: initial;
     background-color: #111;

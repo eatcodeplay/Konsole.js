@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     jsdoc = require("gulp-jsdoc"),
 
     DEST = '',
-    VERSION = "1.1.0";
+    VERSION = "1.2.0";
 
 gulp.task('default', ['minifyJS', 'minifyCSS']);
 
